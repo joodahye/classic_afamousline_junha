@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+* {margin:0; padding:0; box-sizing:border-box;}
+html, body {
+	width:100%;
+	height:120%;
+	font:10px/180%; 
+	font-family: 'Cormorant Garamond','Gowun Batang', serif; color:rgba(89,89,89,100);
+	background:#fdeed9;
+}
+a {
+	text-decoration:none; 
+	color:rgba(89,89,89,100);
+}
+
+img {
+	display:block;	
+}
+#layout{		
+	max-width:800px;		
+	margin:auto;		
+	position:relative;	
+}
+/*(벤더프리픽스)스크롤바 넓이변경*/
+::-webkit-scrollbar {
+		width:1px; 
+}
+
+/*상단*/
+header{
+	width:750px;
+	margin:auto;
+}
+header nav{
+	display:flex;
+	list-style:none;
+	padding:50px 70px 10px 70px;	
+	}
+header li{
+	display:block;
+	padding:0 30px 0 30px;
+	font-size:1.1rem;
+}
+header li a{
+	display:inline-block;
+	transition:0.8s;
+}
+header li a:hover{
+	transform:translateY(-10px);
+}
+header #headerline{
+	width:750px;
+	padding:20px;
+	border-top:1px solid gray;
+	border-bottom:1px solid gray;
+	display:flex;
+	justify-content:space-between;		
+}
+
+header .head1{	
+	padding-top:60px;
+	padding-bottom:40px;
+	padding-right:5px;
+	padding-left:5px;	
+}
+header .head2{		
+	margin-left:auto;
+	margin-right:auto;
+	padding:50px 80px 0 80px;
+	border-right:1px solid gray;
+	border-left:1px solid gray;
+}
+header .head3{	
+	padding-top:40px;
+	padding-bottom:40px;	
+	padding-left:0;
+	padding-right:5px;	
+}
+
+/*이름나열*/
+#name ul{	
+	list-style:none;
+  justify-content:space-between;
+	display:flex;
+	margin:30px;
+}
+#name li{	
+	padding-right:20px;
+	font-size:1.2rem;
+	display:inline-block;		
+	transition:0.2s;	
+}
+#name li:hover{	
+	transform:scale(1.06);
+}
+
+/*사진과텍스트*/
+/*footer{
+	position:absolute;
+}*/
+
+footer #s1 img{
+	width:500px;
+}
+footer #s1 p{		
+	padding:15px 0 15px 200px;	
+}
+footer #s2{	
+	float:right;	
+	margin-top:30px;
+}
+footer #s2 img{
+	width:500px;	
+}
+footer #s2 p{		
+	padding:15px 0 15px 100px;	
+}
+footer #s3{
+	
+	float:left;	
+	margin-top:30px;
+}
+footer #s3 img{
+	width:500px;	
+}
+footer #s3 p{		
+	padding:15px 0 15px 0;	
+	text-align:center;
+}
+footer #s4{	
+	float:right;	
+	margin-top:30px;
+}
+footer #s4 img{
+	width:500px;	
+}
+footer #s4 p{		
+	padding:15px 0 15px 100px;	
+}
